@@ -28,22 +28,15 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef WebNavigationControllerRegistry_h
-#define WebNavigationControllerRegistry_h
+#ifndef WebServiceWorker_h
+#define WebServiceWorker_h
 
 namespace WebKit {
 
-class WebString;
-class WebURL;
+class WebServiceWorker {
 
-class WebNavigationControllerRegistry {
-public:
-    typedef WebCallbacks<WebNavigationController, WebNavigationController> WebNavigationControllerCallbacks;
-    virtual void registerController(const WebString& pattern, const WebURL& scriptUrl, WebNavigationControllerCallbacks*) { }
-
-    virtual void unregisterController(const WebString& pattern, WebNavigationControllerCallbacks*) { }
 };
 
-} // namespace WebKit
+}
 
-#endif
+#endif // WebServiceWorker_h
